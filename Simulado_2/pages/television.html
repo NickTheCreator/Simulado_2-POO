@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Cadastro televisões | Nicola</title>
+  </head>
+  <body>
+    <a href="/index.html">Voltar</a>
+    <h1>Cadastro de televisões</h1>
+
+    <!--Label-->
+    <label>Digite o modelo da televisão:</label>
+    <label>Digite a marca da televisão:</label>
+    <br />
+
+    <!--input-->
+    <input id="iptModel" type="text" placeholder="Modelo" />
+    <input id="iptBrand" type="text" placeholder="Marca" />
+
+    <!--Select-->
+    <select id="selectOwner"></select>
+    <select id="selectChannel"></select>
+
+    <!--Botões-->
+    <input id="btnRegister" type="button" value="Cadastrar" />
+    <input id="btnList" type="button" value="Listar" />
+
+    <!--Tabela-->
+    <table>
+      <thead>
+        <tr>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Dono</th>
+          <th>Canal</th>
+        </tr>
+      </thead>
+      <tbody id="tblTelevision"></tbody>
+    </table>
+
+    <!--Script-->
+    <script src="/src/television/televisionview.ts"></script>
+  </body>
+</html>

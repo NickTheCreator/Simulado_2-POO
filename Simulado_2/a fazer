@@ -1,0 +1,18 @@
+Classes
+    Televisão
+        -modelo (obrigatorio, não pode ser menor do que 3)
+        -marca
+        -dono (tipo Dono, obrigatorio)
+        -canais (tipo vario Canais)
+            não é obrigatorio listar
+
+    Dono
+        -nome
+        -fone (composto, ddd = 2, numero = 4)
+            não é obrigatorio a validação
+
+          
+    Canais
+        -nome (obrigatorio)
+            //não funcionou
+
