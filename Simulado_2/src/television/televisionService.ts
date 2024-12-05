@@ -1,6 +1,7 @@
 import { ITelevision } from "./ITelevision";
 import { Television } from "./Television";
 
+//url
 const url = "https://775yjf-3000.csb.app";
 
 export async function registerTelevision(television: Television) {
@@ -13,7 +14,7 @@ export async function registerTelevision(television: Television) {
   });
 }
 
-export async function listtelTevision() {
+export async function listTelevision() {
   const response = await fetch(url + "/televisions");
   const television: ITelevision[] = await response.json();
 
