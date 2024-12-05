@@ -3,7 +3,8 @@ import { listOwner } from "../owner/ownerService";
 import { Owner } from "../owner/Owner";
 import { Television } from "./Television";
 import { Channel } from "../channel/Channel";
-import { listtelTevision, registerTelevision } from "./televisionService";
+import { listTelevision, registerTelevision } from "./televisionService";
+
 //input
 const iptModel = document.getElementById("iptModel") as HTMLInputElement;
 const iptBrand = document.getElementById("iptBrand") as HTMLInputElement;
@@ -23,8 +24,8 @@ const tblTelevision = document.getElementById(
   "tblTelevision"
 ) as HTMLTableElement;
 
-//Funções
 
+//Funções
 renderOwners();
 renderChannels();
 
@@ -73,7 +74,7 @@ function register() {
 
 async function list() {
   tblTelevision.innerHTML = "";
-  for (let television of await listtelTevision()) {
+  for (let television of await listTelevision()) {
     tblTelevision.innerHTML += `
 <tr>
     <td>${television.model}</td>
